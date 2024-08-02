@@ -1,5 +1,5 @@
 {
-  "name": "drizzle-lantern",
+  "name": "@repo/mono",
   "private": true,
   "scripts": {
     "build": "turbo build",
