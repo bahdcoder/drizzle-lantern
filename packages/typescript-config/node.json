@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node package",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "moduleResolution": "nodenext",
+  }
+}

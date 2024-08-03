@@ -1,5 +1,5 @@
 import { contacts, emailContents } from "./schema";
-import { lantern, number, text, date, json } from "./";
+import { lantern, number, text, date, json } from ".";
 
 const admin = lantern()
   .resource(contacts, {

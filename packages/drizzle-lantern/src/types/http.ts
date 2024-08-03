@@ -35,11 +35,24 @@ export interface LanternCtx<
 
 export type HandlerResponse = Response | Promise<Response>;
 
+export type LanternAsset = {
+  path: string;
+  fullPath: string;
+  type: "css" | "js" | "image" | "font" | "other";
+};
+
+export type LanternRouteResponse = {
+  html?: string;
+  json?: Record<string, any>;
+};
+
 export type LanternRoute<
   TDatabase extends DrizzleDatabase,
   TTable extends Table,
 > = {
   method: HTTPMethods;
   path: string;
-  handler: (ctx: LanternCtx<TDatabase, TTable>) => void;
+  handler: (
+    ctx: LanternCtx<TDatabase, TTable>
+  ) => LanternRouteResponse | Promise<LanternRouteResponse>;
 };

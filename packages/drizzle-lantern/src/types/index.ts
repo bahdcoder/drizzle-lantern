@@ -1,8 +1,4 @@
-import {
-  InferSelectModel,
-  InferInsertModel,
-  Table,
-} from "drizzle-orm";
+import type { Table } from "drizzle-orm";
 import { DrizzleDatabase } from "./database";
 import { Fields } from "../fields/base_field";
 import { LanternCtx } from "./http";
@@ -25,3 +21,5 @@ export interface ResourceConfig<
 export type AnyResourceConfig<
   TDatabase extends DrizzleDatabase,
 > = ResourceConfig<TDatabase, any>;
+
+export * from "./http";

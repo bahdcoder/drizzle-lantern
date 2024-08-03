@@ -1,0 +1,22 @@
+{
+  "name": "@repo/adapter-express-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@repo/drizzle-lantern": "workspace:*",
+    "drizzle-orm": "^0.32.1",
+    "express": "^4.19.2"
+  }
+}
